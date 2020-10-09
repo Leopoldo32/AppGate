@@ -7,4 +7,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="FormButton1" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/fondoEmpresa1</item>
+    </style>
+
+    <style name="FormButton2" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/fondoEmpresa2</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="errorTextAppearance">@color/text_input_box_stroke_error</item>
+
+
+
+    </style>
 </resources>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AppGate</string>
+    <string name="usuario">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="registrarte">Registrarte</string>
 </resources>

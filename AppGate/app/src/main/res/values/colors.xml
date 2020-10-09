@@ -3,4 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="fondoEmpresa1">#FF0000</color>
+    <color name="fondoEmpresa2">#03DAC5</color>
+
+    <color name="colorTextoEmpresa1">#fff</color>
 </resources>
