@@ -52,6 +52,8 @@ public class RegistrarActivity extends AppCompatActivity implements View.OnClick
                     Toast.makeText(this,getString(R.string.error_campos_vacios),Toast.LENGTH_LONG).show();
                 }else if(dao.insertUsuario(u)){
                     Toast.makeText(this,getString(R.string.ok_registro_exitoso),Toast.LENGTH_LONG).show();
+                    us.setText(""); pass.setText(""); nm.setText(""); ap.setText("");
+                    us.setFocusable(false); pass.setFocusable(false); nm.setFocusable(false); ap.setFocusable(false);
                 }else{
                     Toast.makeText(this,getString(R.string.error_usuario_ya_registrado),Toast.LENGTH_LONG).show();
                 }
@@ -61,6 +63,10 @@ public class RegistrarActivity extends AppCompatActivity implements View.OnClick
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
     public void ocultarteclado(){
         /* hide keyboard */
         ((InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE))

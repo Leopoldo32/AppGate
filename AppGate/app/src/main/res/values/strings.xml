@@ -16,10 +16,17 @@
     <string name="title_Editar">Editar Cuenta</string>
     <string name="title_Registrar">Registrar Cuenta</string>
     <string name="title_Mostrar">Usuarios Registrados</string>
-    <string name="title_bienvenida">Hola prueba!</string>
+    <string name="title_bienvenida">Hola </string>
 
     <string name="error_campos_vacios">ERROR: Campos vacios</string>
     <string name="ok_registro_exitoso">Registro Exitoso!</string>
+    <string name="ok_actualizacion_exitosa">Actualización Exitosa!</string>
     <string name="ok_datos_correctos">Datos Correctos</string>
+    <string name="ok_eliminar_usuario">Se eliminó correctamente el usuario</string>
+    <string name="error_eliminar_usuario">ERROR: No se pudo eliminar el usuario</string>
     <string name="error_usuario_ya_registrado">ERROR: Usuario ya registrado</string>
+    <string name="error_usuario_no_actualizar">ERROR: Usuario no se puede actualizar</string>
+    <string name="error_usuario_incorrecto">ERROR: Usuario y/o Contraseña incorrectas</string>
+
+    <string name="alert_msg">Esta seguro de eliminar la cuenta?</string>
 </resources>

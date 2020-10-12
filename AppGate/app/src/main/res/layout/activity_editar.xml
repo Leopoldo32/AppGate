@@ -41,6 +41,7 @@
                         android:id="@+id/editUser2"
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
+                        android:enabled="false"
                         android:layout_height="wrap_content" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -103,7 +104,7 @@
                 >
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/cancelar"
+                    android:id="@+id/btn_cancelar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingVertical="15dp"
@@ -120,7 +121,7 @@
                     />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/actualizar"
+                    android:id="@+id/btn_actualizar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingVertical="15dp"

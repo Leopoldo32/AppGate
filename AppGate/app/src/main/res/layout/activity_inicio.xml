@@ -67,15 +67,24 @@
 
 
         </LinearLayout>
-        <TextView
-            android:id="@+id/nombreUsuario"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:text="@string/title_bienvenida"/>
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/nombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:text="@string/title_bienvenida"/>
+
+        </LinearLayout>
+
 
 
 
