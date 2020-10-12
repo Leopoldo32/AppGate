@@ -20,42 +20,46 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/editar"
+                android:id="@+id/btn_editar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingVertical="15dp"
+                android:layout_margin="2dp"
                 android:text="@string/btn_Editar"
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textStyle="bold"
                 android:theme="@style/FormButton2" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/eliminar"
+                android:id="@+id/btn_eliminar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingVertical="15dp"
                 android:text="@string/btn_Eliminar"
-                android:textSize="15dp"
+                android:layout_margin="2dp"
+                android:textSize="12dp"
                 android:textStyle="bold"
                 android:theme="@style/FormButton1" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/mostrar"
+                android:id="@+id/btn_mostrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingVertical="15dp"
                 android:text="@string/btn_Mostrar"
-                android:textSize="15dp"
+                android:layout_margin="2dp"
+                android:textSize="12dp"
                 android:textStyle="bold"
                 android:theme="@style/FormButton2" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/salir"
+                android:id="@+id/btn_salir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingVertical="15dp"
                 android:text="@string/btn_Salir"
-                android:textSize="15dp"
+                android:layout_margin="2dp"
+                android:textSize="12dp"
                 android:textStyle="bold"
                 android:theme="@style/FormButton1" />
 
@@ -64,6 +68,7 @@
 
         </LinearLayout>
         <TextView
+            android:id="@+id/nombreUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"

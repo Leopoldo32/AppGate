@@ -17,4 +17,9 @@
     <string name="title_Registrar">Registrar Cuenta</string>
     <string name="title_Mostrar">Usuarios Registrados</string>
     <string name="title_bienvenida">Hola prueba!</string>
+
+    <string name="error_campos_vacios">ERROR: Campos vacios</string>
+    <string name="ok_registro_exitoso">Registro Exitoso!</string>
+    <string name="ok_datos_correctos">Datos Correctos</string>
+    <string name="error_usuario_ya_registrado">ERROR: Usuario ya registrado</string>
 </resources>

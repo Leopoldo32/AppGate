@@ -72,7 +72,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/entrar"
+                android:id="@+id/btn_entrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="15dp"
@@ -82,7 +82,7 @@
                 android:theme="@style/FormButton1" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/registrar"
+                android:id="@+id/btn_registrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

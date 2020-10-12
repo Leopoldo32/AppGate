@@ -102,7 +102,7 @@
             >
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/cancelar"
+                android:id="@+id/btn_cancelar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="15dp"
@@ -119,7 +119,7 @@
                 />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/registrar"
+                android:id="@+id/btn_registrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="15dp"
