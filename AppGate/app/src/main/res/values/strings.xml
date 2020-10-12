@@ -3,5 +3,18 @@
     <string name="usuario">Usuario</string>
     <string name="pass">Contraseña</string>
     <string name="entrar">Entrar</string>
+    <string name="btn_Registrar">Registrar</string>
+    <string name="btn_Actualizar">Actualizar</string>
+    <string name="btn_Cancelar">Cancelar</string>
+    <string name="btn_Editar">Editar</string>
+    <string name="btn_Eliminar">Eliminar</string>
+    <string name="btn_Mostrar">Mostrar</string>
+    <string name="btn_Salir">Salir</string>
     <string name="registrarte">Registrarte</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="title_Editar">Editar Cuenta</string>
+    <string name="title_Registrar">Registrar Cuenta</string>
+    <string name="title_Mostrar">Usuarios Registrados</string>
+    <string name="title_bienvenida">Hola prueba!</string>
 </resources>
