@@ -20,8 +20,11 @@
         <item name="android:textColorHint">@android:color/darker_gray</item>
         <item name="android:textColor">@android:color/darker_gray</item>
         <item name="errorTextAppearance">@color/text_input_box_stroke_error</item>
+        <item name="colorError">@color/text_input_box_stroke_error</item>
 
-
-
+    </style>
+    <style name="InputError" parent="TextAppearance.Design.Error"/>
+    <style name="InputError.Red">
+        <item name="android:textColor">@color/text_input_box_stroke_error</item>
     </style>
 </resources>

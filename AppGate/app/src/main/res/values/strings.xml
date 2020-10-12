@@ -27,6 +27,7 @@
     <string name="error_usuario_ya_registrado">ERROR: Usuario ya registrado</string>
     <string name="error_usuario_no_actualizar">ERROR: Usuario no se puede actualizar</string>
     <string name="error_usuario_incorrecto">ERROR: Usuario y/o Contraseña incorrectas</string>
+    <string name="error_password">ERROR: La contraseña debe tener minimo 8 caracteres, donde incluya mayúscula, minúscula, número y caracteres especiales</string>
 
     <string name="alert_msg">Esta seguro de eliminar la cuenta?</string>
 </resources>

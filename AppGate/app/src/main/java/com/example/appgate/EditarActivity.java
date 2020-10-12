@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -12,14 +14,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class EditarActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText editUser, editPass, editNombre, editApellido;
     Button btnActualizar, btnCancelar;
+    TextInputLayout passError;
     int id = 0;
     Usuario u;
     daoUsuario dao;
     Intent x;
+    String EXPRESIONREGULAR = "^(?=.*\\d)(?=.*[\\u0021-\\u002b\\u003c-\\u0040])(?=.*[A-Z])(?=.*[a-z])\\S{8,16}$";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +37,7 @@ public class EditarActivity extends AppCompatActivity implements View.OnClickLis
 
         editUser = (EditText) findViewById(R.id.editUser2);
         editPass = (EditText) findViewById(R.id.editPass2);
+        passError = (TextInputLayout)findViewById(R.id.editPass1);
         editNombre = (EditText) findViewById(R.id.editName2);
         editApellido = (EditText) findViewById(R.id.editLastname2);
         btnActualizar = (Button) findViewById(R.id.btn_actualizar);
@@ -46,6 +56,33 @@ public class EditarActivity extends AppCompatActivity implements View.OnClickLis
         editNombre.setText(u.getNombre());
         editApellido.setText(u.getApellidos());
 
+
+        editPass.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable s) {
+
+                Pattern ps = Pattern.compile(EXPRESIONREGULAR);
+                Matcher ms = ps.matcher(editPass.getText().toString());
+                boolean bs = ms.matches();
+
+                if (bs) {
+                    //es valido
+                    passError.setError(null);
+                    passError.setErrorEnabled(false);
+                    passError.setErrorTextAppearance(R.style.InputError_Red);
+                }else{
+                    //no es valido
+                    passError.setErrorEnabled(true);
+                    passError.setError(getString(R.string.error_password));
+                    passError.setErrorTextAppearance(R.style.InputError_Red);
+
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+        });
     }
 
     @Override
